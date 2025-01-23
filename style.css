@@ -1,0 +1,77 @@
+:root {
+    --primary: #4A90E2;
+    --accent: #F5A623;
+    --bg-color: #F8F9FA;
+    --text-color: #333333;
+    --card-bg: #FFFFFF;
+}
+
+/* Body and General Styles */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--primary);
+}
+
+.nav-link.active {
+    color: white;
+    font-weight: 600;
+    font-size: large;
+}
+
+
+.nav-link {
+    color: #ffffff !important;
+    /* Ensure text is readable */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent);
+    border-color: var(--card-bg);
+}
+
+.btn-outline-primary {
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--card-bg);
+    color: white;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid #ddd;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--accent);
+}
+
+h1,
+h4 {
+    color: var(--primary);
+}
+
+img:hover {
+    opacity: 0.8;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.link:hover {
+    text-decoration: underline;
+}

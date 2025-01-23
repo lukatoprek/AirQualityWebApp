@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air quality - About</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand">Air Quality App</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sources.html">Sources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <h1 class="text-center mb-4">About the Air Quality Index (AQI)</h1>
+      <p class="lead">
+        The AQI is an index for reporting daily air quality. It tells you how
+        clean or polluted your air is, and what associated health effects might
+        be a concern for you. The AQI focuses on health effects you may
+        experience within a few hours or days after breathing polluted air.
+      </p>
+
+      <h2 class="mt-4 text-center">How Does the AQI Work?</h2>
+      <p>
+        Think of the AQI as a yardstick that runs from 0 to 500. The higher the
+        AQI value, the greater the level of air pollution and the greater the
+        health concern. For example, an AQI value of 50 represents good air
+        quality, while an AQI value over 300 represents hazardous air quality.
+      </p>
+
+      <h2 class="mt-4 text-center">Understanding the AQI</h2>
+      <p>
+        The AQI is divided into six categories, each corresponding to a
+        different level of health concern. Below is a summary of the AQI
+        categories as well as health effects of each AQI levels:
+      </p>
+
+      <table class="table table-bordered text-center">
+        <thead>
+          <tr>
+            <th>AQI</th>
+            <th>Air Pollution Level</th>
+            <th>Health Implications</th>
+            <th>Cautionary Statement (for PM2.5)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background-color: #009966; color: white">
+            <td style="white-space: nowrap">0 - 50</td>
+            <td>Good</td>
+            <td>
+              Air quality is considered satisfactory, and air pollution poses
+              little or no risk.
+            </td>
+            <td>None</td>
+          </tr>
+          <tr style="background-color: #ffde33">
+            <td style="white-space: nowrap">51 - 100</td>
+            <td>Moderate</td>
+            <td>
+              Air quality is acceptable; however, for some pollutants, there may
+              be a moderate health concern for a very small number of people who
+              are unusually sensitive to air pollution.
+            </td>
+            <td>
+              Active children and adults, and people with respiratory disease,
+              such as asthma, should limit prolonged outdoor exertion.
+            </td>
+          </tr>
+          <tr style="background-color: #ff9933">
+            <td style="white-space: nowrap">101 - 150</td>
+            <td>Unhealthy for Sensitive Groups</td>
+            <td>
+              Members of sensitive groups may experience health effects; the
+              general public is not likely to be affected.
+            </td>
+            <td>
+              Active children and adults, and people with respiratory disease,
+              such as asthma, should limit prolonged outdoor exertion.
+            </td>
+          </tr>
+          <tr style="background-color: #cc0033; color: white">
+            <td style="white-space: nowrap">151 - 200</td>
+            <td>Unhealthy</td>
+            <td>
+              Everyone may begin to experience health effects; members of
+              sensitive groups may experience more serious health effects.
+            </td>
+            <td>
+              Active children and adults, and people with respiratory disease,
+              such as asthma, should avoid prolonged outdoor exertion; everyone
+              else, especially children, should limit prolonged outdoor
+              exertion.
+            </td>
+          </tr>
+          <tr style="background-color: #660099; color: white">
+            <td style="white-space: nowrap">201 - 300</td>
+            <td>Very Unhealthy</td>
+            <td>
+              Health warnings of emergency conditions; the entire population is
+              more likely to be affected.
+            </td>
+            <td>
+              Active children and adults, and people with respiratory disease,
+              such as asthma, should avoid all outdoor exertion; everyone else,
+              especially children, should limit outdoor exertion.
+            </td>
+          </tr>
+          <tr style="background-color: #7e0023; color: white">
+            <td style="white-space: nowrap">300+</td>
+            <td>Hazardous</td>
+            <td>
+              Health alert: everyone may experience more serious health effects.
+            </td>
+            <td>Everyone should avoid all outdoor exertion.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="mt-0 text-center">
+        Note: Values above 500 are considered Beyond the AQI. Follow
+        recommendations for the Hazardous category.
+      </p>
+    </div>
+    <footer class="bg-dark text-light text-center py-3 mt-auto">
+      <div class="container">
+        <p class="mb-0">Luka Toprek</p>
+        <p class="mb-0">&copy; 2025 All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
