@@ -6,7 +6,6 @@
     --card-bg: #FFFFFF;
 }
 
-/* Body and General Styles */
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -25,10 +24,8 @@ body {
 
 .nav-link {
     color: #ffffff !important;
-    /* Ensure text is readable */
 }
 
-/* Button Styles */
 .btn-primary {
     background-color: var(--primary);
     border-color: var(--primary);
