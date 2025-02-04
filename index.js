@@ -1,11 +1,10 @@
-// Function to fetch the API key using AJAX from the PHP backend
 function getApiKey() {
   return new Promise((resolve, reject) => {
     $.ajax({
-      url: "get_api_key.php", // Path to the PHP script that fetches the API key
+      url: "get_api_key.php",
       method: "GET",
       success: function (data) {
-        resolve(data.apiKey); // Return the API key from the response
+        resolve(data.apiKey);
       },
       error: function (error) {
         reject("Error fetching API key: " + error);
@@ -113,7 +112,6 @@ function setPM10Value(value) {
 }
 
 function showAlert(message, type) {
-  // Create the alert div
   const alertDiv = document.createElement("div");
   alertDiv.classList.add(
     "alert",
@@ -124,10 +122,8 @@ function showAlert(message, type) {
   );
   alertDiv.setAttribute("role", "alert");
 
-  // Add the message to the alert div
   alertDiv.innerHTML = message;
 
-  // Create the close button for the alert
   const closeButton = document.createElement("button");
   closeButton.setAttribute("type", "button");
   closeButton.classList.add("btn-close");
@@ -135,20 +131,16 @@ function showAlert(message, type) {
   closeButton.setAttribute("aria-label", "Close");
   alertDiv.appendChild(closeButton);
 
-  // Append the alert to the alert container
   document.getElementById("alert-container").appendChild(alertDiv);
 
-  // Auto-remove the alert after 5 seconds
   setTimeout(() => {
     document.getElementById("alert-container").removeChild(alertDiv);
     alertDiv.classList.remove("show");
   }, 5000);
 }
 
-// Main function to render the data
 async function render() {
   try {
-    // Fetch the API key using AJAX
     const apiKey = await getApiKey();
     var city = document.getElementById("inputField").value.toLowerCase();
 
